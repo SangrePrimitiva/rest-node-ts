@@ -1,0 +1,15 @@
+{
+	"settings": {
+		"import/resolver": {
+			"typescript": {}
+		}
+	},
+	"extends": ["wesbos/typescript"],
+
+	"rules": {
+		"no-unused-vars": "warn",
+		"import/no-extraneous-dependencies": "warn",
+		"func-names": "off",
+		"no-console": "warn"
+	}
+}
