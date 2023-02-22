@@ -1,0 +1,49 @@
+{
+	"name": "api-rest-node-ts",
+	"version": "1.0.0",
+	"description": "La API más fácil de usar para microservicios",
+	"main": "./dist/app.js",
+	"scripts": {
+		"prestart": "rimraf dist",
+		"start": "tsc && node ./dist/app.js",
+		"build": "tsc",
+		"tstest": "tsc --watch",
+		"nodetest": "nodemon ./dist/app.js",
+		"compileRun": "tsc && node ./dist/app.js",
+		"test": "nodemon -e ts --exec \"npm run start\"",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"predev": "node ./cli/predev.mjs",
+		"dev": "node ./cli/dev.mjs",
+		"testcli": "node ./cli/testcli.mjs",
+		"docker": "docker-compose -f docker-compose.db.yml -f docker-compose.app.yml up -d",
+		"docker:app": "docker-compose -f docker-compose.app.yml up -d",
+		"docker:db": "docker-compose -f docker-compose.db.yml up -d"
+	},
+	"keywords": [],
+	"author": "Juan Gagliardo",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.20.1",
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.3",
+		"express": "^4.18.2",
+		"mongoose": "^6.9.2",
+		"multer": "^1.4.5-lts.1",
+		"mysql2": "^3.1.2",
+		"oracledb": "^5.5.0",
+		"sequelize": "^6.28.0"
+	},
+	"devDependencies": {
+		"@types/body-parser": "^1.19.2",
+		"@types/cors": "^2.8.13",
+		"@types/express": "^4.17.17",
+		"@types/multer": "^1.4.7",
+		"@types/node": "^18.11.19",
+		"eslint-config-wesbos": "^3.2.3",
+		"eslint-import-resolver-typescript": "^3.5.3",
+		"nodemon": "^2.0.20",
+		"rimraf": "^4.1.2",
+		"typescript": "^4.9.5"
+	}
+}
