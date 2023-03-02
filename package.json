@@ -15,7 +15,7 @@
 		"lint:fix": "eslint . --fix",
 		"predev": "node ./cli/predev.mjs",
 		"dev": "node ./cli/dev.mjs",
-		"testcli": "node ./cli/testcli.mjs",
+		"devtest": "node ./cli/devtest.mjs",
 		"docker": "docker-compose -f docker-compose.db.yml -f docker-compose.app.yml up -d",
 		"docker:app": "docker-compose -f docker-compose.app.yml up -d",
 		"docker:db": "docker-compose -f docker-compose.db.yml up -d"
@@ -40,6 +40,7 @@
 		"@types/express": "^4.17.17",
 		"@types/multer": "^1.4.7",
 		"@types/node": "^18.11.19",
+		"enquirer": "^2.3.6",
 		"eslint-config-wesbos": "^3.2.3",
 		"eslint-import-resolver-typescript": "^3.5.3",
 		"nodemon": "^2.0.20",
