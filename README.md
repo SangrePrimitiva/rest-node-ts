@@ -14,3 +14,15 @@
 -   [ ] modo de testeo contra prod con variables de entorno
 
 --
+
+```
+git remote add template https://github.com/SangrePrimitiva/rest-node-ts-template.git
+```
+
+```
+git fetch template
+```
+
+```
+git merge template/main --allow-unrelated-histories
+```
