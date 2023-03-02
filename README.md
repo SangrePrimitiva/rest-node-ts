@@ -12,3 +12,5 @@
 -   [ ] logeo con winston y reporte al discord
 -   [ ] linteo desde gh actions, por si algún hdp edita algo por fuera de vscode
 -   [ ] modo de testeo contra prod con variables de entorno
+
+--
